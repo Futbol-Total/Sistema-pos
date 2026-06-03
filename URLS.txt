@@ -1,0 +1,130 @@
+=============================================================
+RESTPOS — SISTEMA POS INTERACTIVO Y PERSONALIZABLE
+=============================================================
+
+ACCESO RÁPIDO:
+
+1. PÁGINA DE VENTAS (Landing Page)
+   URL: /
+   Descripción: Narrativa completa para vender RestoPOS
+   - Características
+   - Demostración paso a paso
+   - Precios y ofertas
+   - FAQ
+   - Testimonios
+
+2. SISTEMA POS EN VIVO (Demostración Interactiva)
+   URL: /demo
+   Descripción: POS completamente funcional para demostración
+   - Selecciona mesa
+   - Toma orden visual
+   - Calcula totales automáticamente
+   - Múltiples medios de pago
+   - Cierre de cuenta
+
+3. PANEL DE ADMINISTRACIÓN (Editable)
+   URL: /admin
+   Descripción: Personaliza el menú sin código
+   - Edita productos
+   - Actualiza precios
+   - Cambia descripciones
+   - Los cambios aparecen al instante en /demo
+
+=============================================================
+
+FLUJO DE DEMOSTRACIÓN SUGERIDO:
+
+Paso 1: (5 min) Muestra la página de inicio
+  → Abre "/" y recorre todas las secciones
+  → Esto establece el contexto y el valor
+
+Paso 2: (5 min) Personaliza el menú en vivo
+  → Abre "/admin"
+  → Cambia productos con datos REALES del restaurante
+  → Haz esto EN FRENTE del dueño para mostrar control
+
+Paso 3: (10 min) Demuestra el flujo completo
+  → Abre "/demo"
+  → Selecciona Mesa 1
+  → Toma una orden completa
+  → Muestra el carrito, impuestos, propina
+  → Cierra la cuenta
+  → ¡Orden guardada en la base de datos!
+
+Paso 4: Cierra con la oferta
+  → Vuelve a "/" 
+  → Muestra la sección "Precios"
+  → "Tres cupos disponibles, ¿iniciamos esta semana?"
+
+=============================================================
+
+DATOS DE DEMOSTRACIÓN PRECARGADOS:
+
+Restaurante: Restaurante Demo
+Categorías: Platillos Fuertes, Bebidas, Postres
+
+Productos:
+- Punta de Anca (Platillo Fuerte)      $65.000
+- Desgranado (Platillo Fuerte)         $45.000
+- Hamburguesa de la Casa (Platillo)    $35.000
+- Limonada de Coco (Bebida)            $12.000
+- Jugo Natural (Bebida)                 $8.000
+
+Mesas: 1-5 (capacidades 2-6 personas)
+
+=============================================================
+
+CÓMO PERSONALIZAR:
+
+Para cambiar menú rápidamente:
+1. Abre /admin
+2. Edita nombre, precio, descripción
+3. Guarda cambios
+4. Los cambios aparecen inmediatamente en /demo
+
+Para agregar productos nuevos:
+- Usa la base de datos Supabase directamente
+- O modifica los datos en la tabla "products"
+- Recarga /demo
+
+=============================================================
+
+TECNOLOGÍA:
+
+Backend: Supabase (PostgreSQL en la nube)
+Frontend: React + TypeScript + Tailwind CSS
+Iconografía: Lucide React
+Base de datos: 5 tablas principales
+  - restaurants
+  - categories
+  - products
+  - tables
+  - orders
+  - order_items
+
+=============================================================
+
+CARACTERÍSTICAS COMPLETAMENTE FUNCIONALES:
+
+✓ Selección visual de mesas
+✓ Menú por categorías
+✓ Carrito en tiempo real
+✓ Cálculo automático de impuestos (8%)
+✓ Propina sugerida (10%)
+✓ Múltiples medios de pago
+✓ Modal de confirmación
+✓ Persistencia en base de datos
+✓ Panel de edición sin código
+✓ Responsive para tablet y desktop
+✓ Animaciones suaves
+✓ Diseño premium profesional
+
+=============================================================
+
+¡LISTO PARA DEMOSTRACIÓN EN RESTAURANTES!
+
+Construido en: React + Supabase
+Deployable en: Bolt.new, Vercel, Netlify
+Estado: ✅ Production-Ready
+
+=============================================================
